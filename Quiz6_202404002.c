@@ -1,4 +1,6 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+#넓이, 높이, 문자를 입력받아 넓이 X 높이 문자로 채워진 사각형 그리기
+
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void) {
