@@ -7,7 +7,7 @@
 #define CLEAR "cls"
 
 // 학번/이름 출력문 함수
-void mylnfo() {
+void myinfo() {
     printf("********************\n");
     printf("* 202404002 강지수 *\n");
     printf("********************\n\n");
@@ -27,7 +27,7 @@ int main() {
     int input_num; // 사용자로부터 숫자 입력받는 변수
 
     do {
-        mylnfo();
+        myinfo();
         // 숫자 입력받기
         input_num = input();
 
