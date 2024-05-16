@@ -1,4 +1,6 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+#Up & Down 게임 (컴퓨터가 1~30까지 숫자 중 랜덤하게 정한 하나의 숫자를 맞추는 게임)
+
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
