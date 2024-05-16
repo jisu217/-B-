@@ -1,4 +1,6 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+#HW1_1: 카페 키오스크 (사용자로부터 메뉴와 수량, 지불할 돈을 입력받고 영수증에 주문내역과 총 금액과 잔돈을 출력하는 프로그램)
+
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
 #define MAX_ORDERS 100
