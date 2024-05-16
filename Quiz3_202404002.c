@@ -27,8 +27,7 @@ int main(void)
 
 	printf("상영시간:"); //상영시간을 입력합니다.
 	scanf("%hd", &c);
-
-
+	
 	printf("\n\"마녀\"\n");
 	printf(" - %d년 개봉\n", year);
 	printf(" - 장르: %c\n", a);
