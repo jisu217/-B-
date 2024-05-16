@@ -1,4 +1,6 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+#입영대상자 검사 (지원서 접수년도 기준 18세이상 28세이하 (24년 기준: 1996.1.1. ~ 2006.12.31. 출생자)
+    
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)
