@@ -10,9 +10,7 @@ int main(void)
     printf("* 202404002 강지수 *\n");
     printf("********************\n");
 
-
     int data16;
-
 
     printf("16진수 입력:");
     scanf("%x", &data16); // data16 변수에 2진수로 저장
