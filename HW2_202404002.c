@@ -1,11 +1,12 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+//HW2: 계좌관리 - 사용자의 계좌를 관리하는 프로그램 작성
+
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <conio.h>
 #include <windows.h>
 
-//HW2: 계좌관리 - 사용자의 계좌를 관리하는 프로그램 작성
 // 구조체 정의
 struct ACCOUNT {
     char name[100]; // 이름: 문자열 name
