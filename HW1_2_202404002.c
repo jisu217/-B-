@@ -1,4 +1,4 @@
-#HW1_2: 숫자야구게임 (상수값으로 미리 저장한 BALL에 있는 숫자를 사용자가 맞추는 게임)
+// HW1_2: 숫자야구게임 (상수값으로 미리 저장한 BALL에 있는 숫자를 사용자가 맞추는 게임)
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
