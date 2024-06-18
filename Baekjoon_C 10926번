@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void) {
+    char A[100]; 
+    
+    scanf("%s", A);
+    
+    printf("%s??!\n", A);
+    
+    return 0;
+}
