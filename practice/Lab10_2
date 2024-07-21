@@ -19,14 +19,14 @@ void swap2(int *a, int *b) {
 }
 
 int main(void) {
-int a = 123;
-int b = 321;
+    int a = 123;
+    int b = 321;
  
-printf("원본: a=%d b=%d\n", a, b);
+    printf("원본: a=%d b=%d\n", a, b);
 
-swap1(123, 321); // call by value
-printf("swap1호출: a=%d b=%d\n", a, b);
+    swap1(123, 321); // call by value
+    printf("swap1호출: a=%d b=%d\n", a, b);
 
-swap2(&a, &b); // call by ref
-printf("swap2호출: a=%d b=%d\n", a, b);
+    swap2(&a, &b); // call by ref
+    printf("swap2호출: a=%d b=%d\n", a, b);
 }
