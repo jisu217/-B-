@@ -7,8 +7,7 @@ struct student {
     double grade;
 };
 
-int main(void){
-    
+int main(void) {
     struct student s;
     
     s.number = 20170001;
