@@ -1,11 +1,9 @@
-#16진수로 입력받아 8진수 10진수로 출력
+// 16진수로 입력받아 8진수 10진수로 출력
     
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main(void) 
-{
-
+int main(void) {
     printf("********************\n");
     printf("* 202404002 강지수 *\n");
     printf("********************\n");
