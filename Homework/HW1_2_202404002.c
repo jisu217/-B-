@@ -6,21 +6,20 @@
 #include <time.h>
 
 int main(void) {
-
     printf("********************\n");
     printf("* 202404002 강지수 *\n");
     printf("********************\n\n");
 
     // 변수 선언
     int computerball[3]; // 컴퓨터가 생성한 숫자를 저장하는 배열
-    int userball[3];     // 사용자가 입력한 숫자를 저장하는 배열
-    int i, j;            // 반복문을 위한 카운터 변수
-    int temp;            // 중복된 숫자를 체크를 위한 변수
-    int count = 1;       // 시도 횟수를 저장하는 변수
-    int strike;          // 스트라이크 수를 저장하는 변수
-    int ball;            // 볼 수를 저장하는 변수
-    int out = 0;         // 아웃 수를 저장하는 변수
-    int gameover = 0;    // 게임 종료 여부를 저장하는 변수
+    int userball[3]; // 사용자가 입력한 숫자를 저장하는 배열
+    int i, j; // 반복문을 위한 카운터 변수
+    int temp; // 중복된 숫자를 체크를 위한 변수
+    int count = 1; // 시도 횟수를 저장하는 변수
+    int strike; // 스트라이크 수를 저장하는 변수
+    int ball; // 볼 수를 저장하는 변수
+    int out = 0; // 아웃 수를 저장하는 변수
+    int gameover = 0; // 게임 종료 여부를 저장하는 변수
 
     // 랜덤 
     srand((unsigned)time(NULL));
@@ -28,7 +27,7 @@ int main(void) {
     for (i = 0; i < 3; i++) {
         temp = rand() % 10;
         computerball[i] = temp;
-
+        
         for (j = 0; j < i; j++)
             if (temp == computerball[j]) {
                 i--;
@@ -95,7 +94,6 @@ int main(void) {
         else {
             printf("%d번째 결과: %dstrike\t%dball\t%dout\n\n", count, strike, ball, out);
         }
-
         count++;
 
         if (!gameover && count <= 9)
