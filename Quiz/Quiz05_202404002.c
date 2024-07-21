@@ -25,5 +25,4 @@ int main(void) {
         printf("\n 잘못 입력하였습니다. \n");
 
     return 0;
-
 }
