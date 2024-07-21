@@ -8,7 +8,6 @@ typedef struct point {
 POINT add(POINT p, POINT delta);
 
 int main(void) {
-    
     POINT p = { 2, 3 };
     POINT delta = { 10, 10 };
     POINT result;
@@ -17,11 +16,9 @@ int main(void) {
     printf("(%d, %d)+(%d, %d)->(%d, %d)\n", p.x, p.y, delta.x, delta.y, result.x, result.y);
     
     return 0;
-    
 }
 
 POINT add(POINT p, POINT delta) {
-    
     POINT new_p;
     
     new_p.x = p.x + delta.x;
