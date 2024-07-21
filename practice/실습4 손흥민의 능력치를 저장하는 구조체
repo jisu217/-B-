@@ -7,8 +7,7 @@ typedef struct state {
         int defence;
     }STATE;
     
-int main(){
-    
+int main() {
     STATE player;
     strcpy(player.name,"son");
     
@@ -18,5 +17,4 @@ int main(){
     printf("%s의 능력치\n", player.name);
     printf("attack : %d\n", player.attack);
     printf("defence : %d\n", player.defence);
-    
 }
