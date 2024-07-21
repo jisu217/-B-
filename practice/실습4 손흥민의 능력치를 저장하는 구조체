@@ -5,7 +5,7 @@ typedef struct state {
         char name[100];
         int attack;
         int defence;
-    }STATE;
+    } STATE;
     
 int main() {
     STATE player;
