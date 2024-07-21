@@ -15,7 +15,6 @@ int main() {
     scanf(" %c", &letter);
     
     drawRect(letter, width, height);
-
 }
 
 void drawRect(char l, int w, int h) {
