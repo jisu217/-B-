@@ -10,19 +10,19 @@ int main(void) {
     printf("* 202404002 강지수 *\n");
     printf("********************\n\n");
 
-    //변수와 배열을 선언
+    // 변수와 배열을 선언
     char names[MAX_ORDERS][20]; // 상품명을 저장하는 배열
     int quantities[MAX_ORDERS]; // 수량을 저장하는 배열
     int prices[MAX_ORDERS];     // 가격을 저장하는 배열
-    int order_sequence[MAX_ORDERS]; //주문이 들어온 순서를 저장하는 배열
-    int choice = 0; //상품명을 저장하는 변수
-    int amount = 0; //수량을 저장하는 변수
+    int order_sequence[MAX_ORDERS]; // 주문이 들어온 순서를 저장하는 배열
+    int choice = 0; // 상품명을 저장하는 변수
+    int amount = 0; // 수량을 저장하는 변수
     int get_money = 0; // 지불할 금액을 저장하는 변수
     int money_total_count = 0; // 주문 받은 메뉴의 총 금액을 저장하는 변수
     int change = 0; // 거스름 돈을 저장하는 변수
     int num_orders = 0; // 현재 주문 수를 저장하는 변수
 
-    //메뉴 출력
+    // 메뉴 출력
     printf("\t[Cafe Menu]\n");
     printf("1. 아메리카노\t2,500\n");
     printf("2. 카페라떼\t3,300\n");
@@ -33,13 +33,12 @@ int main(void) {
     printf("* 메뉴와 수량을 모두 입력해주세요.\n");
     printf("* 종료는 -1 입력\n");
 
-    //메뉴와 수량 입력
+    // 메뉴와 수량 입력
     while (1) {
         scanf("%d", &choice);
         if (choice == -1) {
             printf("[[[[주문종료]]]]]\n"); break;
         }
-
         scanf("%d", &amount);
         if (amount <= 0) {
             printf("* 잘못 입력하였습니다. *\n"); continue;
@@ -54,6 +53,7 @@ int main(void) {
         case 6: strcpy(names[num_orders], "치아바타"); prices[num_orders] = 3400; break;
         default: printf("* 잘못 입력하였습니다. *\n"); continue;
         }
+        
         quantities[num_orders] = amount;
         order_sequence[num_orders] = num_orders + 1; //주문이 들어온 순서를 저장
         num_orders++;
@@ -63,18 +63,17 @@ int main(void) {
         money_total_count += prices[i] * quantities[i];
     }
 
-    //총 금액 출력 및 지불할 돈 입력
+    // 총 금액 출력 및 지불할 돈 입력
     printf("\n총 금액:%d,%03d원\n", money_total_count / 1000, money_total_count % 1000);
 
     do {
         printf("지불할 돈:");
         scanf("%d", &get_money);
-
     } while (get_money < money_total_count);
 
     change = get_money - money_total_count;
 
-    //영수증 출력
+    // 영수증 출력
     printf("\n\t[영수증]\n");
     printf("-----------------------------------\n");
     printf("상 품 명\t금 액\t수 량\n");
