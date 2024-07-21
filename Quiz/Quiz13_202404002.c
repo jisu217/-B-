@@ -1,4 +1,6 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+// 넌센스 퀴즈 게임
+
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
 
@@ -9,16 +11,15 @@ void myinfo() {
     printf("********************\n\n");
 }
 
-typedef struct quiz { //문제와 답을 저장
-    char question[100]; //질문저장
-    char solution[100]; //답 저장
+typedef struct quiz { // 문제와 답을 저장
+    char question[100]; // 질문저장
+    char solution[100]; // 답 저장
 } QUIZ;
 
 int main() {
-
     myinfo(); // 학번/이름 출력 함수 호출
 
-    //사용자로부터 답을 입력받아 정답인지 아닌지 보여주기
+    // 사용자로부터 답을 입력받아 정답인지 아닌지 보여주기
     QUIZ quizzes[3] = {
         {"별 중에 가장 슬픈 별은?", "이별"},
         {"진짜 새의 이름은 무엇일까요?", "참새"},
