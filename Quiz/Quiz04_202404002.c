@@ -1,11 +1,9 @@
-#현재 통장 잔고, 월급, 고정 지출을 입력받아 다음 달 예상 통장 잔고를 출력하는 프로그램
+// 현재 통장 잔고, 월급, 고정 지출을 입력받아 다음 달 예상 통장 잔고를 출력하는 프로그램
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main(void)
-
-{
+int main(void) {
     printf("********************\n");
     printf("* 202404002 강지수 *\n");
     printf("********************\n\n");
