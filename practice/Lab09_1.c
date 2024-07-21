@@ -4,14 +4,12 @@
 
 int get_integer();
 
-int get_max(int x, int y)
-{
+int get_max(int x, int y) {
     if (x > y) return(x);
     else return(y);
 }
 
 int main() {
-    
     int a = get_integer();
     int b = get_integer();
     
@@ -21,8 +19,7 @@ int main() {
     
 }
 
-int get_integer(void)
-{
+int get_integer(void) {
     int value;
     printf("정수를 입력하시오 : ");
     scanf("%d", &value);
