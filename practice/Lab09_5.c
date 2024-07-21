@@ -1,10 +1,10 @@
 // Lab9_5.c: 사각형 그리기
+
 #include <stdio.h>
 
 void drawRect(char l, int w, int h);
 
-int main(){
-    
+int main() {
     int width, height;
     char letter;
     
@@ -18,8 +18,7 @@ int main(){
 
 }
 
-void drawRect(char l, int w, int h){
-    
+void drawRect(char l, int w, int h) {
     for (int i = 0; i < h; i++){
         for (int j = 0; j < w; j++)
         printf("%c", l);
