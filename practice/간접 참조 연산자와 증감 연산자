@@ -27,5 +27,4 @@ int main(void) {
     printf("val=%c p=%u v=%c \n", val, p, v); // c, 1093925076, c
     
     return 0;
-    
 }
