@@ -16,7 +16,6 @@ int main() {
     printf("두 수 중에서 큰 수는 %d입니다.\n", get_max(a, b));
     
     return 0;
-    
 }
 
 int get_integer(void) {
