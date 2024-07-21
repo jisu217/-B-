@@ -4,34 +4,27 @@
 
 #include <stdio.h>
 
-int main(void){
-    
+int main(void) {
     char val = 'a';
     char *p = &val;
-    
     char v = *p;
     
-    printf("val=%c p=%u v=%c \n", val, p, v);
-    // a, 1093925076, a
+    printf("val=%c p=%u v=%c \n", val, p, v); // a, 1093925076, a
     
     v = *p++;
-    printf("val=%c p=%u v=%c \n", val, p, v);
-    // a, 1093925077, a
+    printf("val=%c p=%u v=%c \n", val, p, v); // a, 1093925077, a
     
     p = &val;
     v = (*p)++;
-    printf("val=%c p=%u v=%c \n", val, p, v);
-    // b, 1093925076, a 
+    printf("val=%c p=%u v=%c \n", val, p, v); // b, 1093925076, a 
     
     p = &val;
     v = *++p;
-    printf("val=%c p=%u v=%c \n", val, p, v);
-    // b, 1093925077, ?
+    printf("val=%c p=%u v=%c \n", val, p, v); // b, 1093925077, ?
     
     p = &val;
     v = ++*p;
-    printf("val=%c p=%u v=%c \n", val, p, v);
-    // c, 1093925076, c
+    printf("val=%c p=%u v=%c \n", val, p, v); // c, 1093925076, c
     
     return 0;
     
