@@ -1,4 +1,4 @@
-//HW2: 계좌관리 - 사용자의 계좌를 관리하는 프로그램 작성
+// HW2: 계좌관리 - 사용자의 계좌를 관리하는 프로그램 작성
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -99,19 +99,15 @@ void processChoice(int choice, struct ACCOUNT* acc) {
     case 1: // 입금
         deposit(acc);
         break;
-
     case 2: // 출금
         withdraw(acc);
         break;
-
     case 3: // 잔액
         report(acc);
         break;
-
     case 0: // 세번째 단계 - 종료
         printf("[[[프로그램 종료]]]\n");
         return;
-
     default:
         printf("***잘못입력하였습니다***\n");
         Sleep(2000);
@@ -131,11 +127,8 @@ int main(void) {
     do {
         menu();
         choice = _getch() - '0';
-
         system("cls");
-
         processChoice(choice, &acc);
-
     } while (choice != 0);
 
     return 0;
