@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+    char s[] = "Helloworld";
+    char* p = s;
+    
+    s[0] = 'h';
+    printf("문자열이 가리키는 문자열 = %s \n", s);
+    printf("포인터가 가리키는 문자열 = %s \n\n", p);
+    
+    p[0] = 'H';
+    printf("포인터가 가리키는 문자열 = %s \n", p);
+    printf("문자열이 가리키는 문자열 = %s \n\n", s);
+    
+    p = "Goodbye";
+    printf("포인터가 가리키는 문자열 = %s \n", p);
+    printf("문자열이 가리키는 문자열 = %s \n\n", s);
+    
+    return 0;
+}

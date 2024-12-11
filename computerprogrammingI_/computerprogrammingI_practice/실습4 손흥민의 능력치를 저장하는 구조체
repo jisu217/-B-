@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+
+typedef struct state {
+        char name[100];
+        int attack;
+        int defence;
+    } STATE;
+    
+int main() {
+    STATE player;
+    strcpy(player.name,"son");
+    
+    player.attack = 90;
+    player.defence = 90;
+    
+    printf("%s의 능력치\n", player.name);
+    printf("attack : %d\n", player.attack);
+    printf("defence : %d\n", player.defence);
+}

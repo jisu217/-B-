@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int sum = 0;
+    int j = 0;
+    int arr[100] = {0};
+    
+    for (int i=11; i<100; i++){
+        if ((i%7)==0){
+        sum += i;
+        arr[j++] = i;
+        printf("%d", i);
+        }
+    }
+}
