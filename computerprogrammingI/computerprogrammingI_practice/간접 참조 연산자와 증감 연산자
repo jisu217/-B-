@@ -1,0 +1,30 @@
+// 간접 참조 연산자와 증감 연산자
+// *p++; : p가 가르키는 위치에서 값을 가져온 후에 p를 증가한다.
+// (*p)++; : p가 가르키는 위치의 값을 증가한다.
+
+#include <stdio.h>
+
+int main(void) {
+    char val = 'a';
+    char *p = &val;
+    char v = *p;
+    
+    printf("val=%c p=%u v=%c \n", val, p, v); // a, 1093925076, a
+    
+    v = *p++;
+    printf("val=%c p=%u v=%c \n", val, p, v); // a, 1093925077, a
+    
+    p = &val;
+    v = (*p)++;
+    printf("val=%c p=%u v=%c \n", val, p, v); // b, 1093925076, a 
+    
+    p = &val;
+    v = *++p;
+    printf("val=%c p=%u v=%c \n", val, p, v); // b, 1093925077, ?
+    
+    p = &val;
+    v = ++*p;
+    printf("val=%c p=%u v=%c \n", val, p, v); // c, 1093925076, c
+    
+    return 0;
+}
